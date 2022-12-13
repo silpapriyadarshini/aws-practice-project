@@ -1,7 +1,7 @@
-resource "aws_vpc" "vpc_lab" {
-    cidr_block  = var.vpc_cidr
-    instance_tenancy = "default"
-    tags = {
-        Name    = var.vpc_name
-    }
+module "my_vpc1"{
+    source = "./modules/vpc"
+    
+    vpc_cidr  = var.vpc1_cidr
+    vpc_name  = var.vpc1_name
+
 }

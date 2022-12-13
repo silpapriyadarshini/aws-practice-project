@@ -1,13 +1,7 @@
-variable "vpc_name" {
-    description = "This is a vpc name"
-    type = string
+variable "vpc1_cidr" {
+  description = "This is the CIDR block of my 1st VPC"
 }
 
-variable "aws_region" {
-    description = "region for resources deplyment"
-    type = string
-}
-
-variable "vpc_cidr" {
-    description = "This is a cidr name"
+variable "vpc1_name" {
+  description = "The name of my 1st VPC"
 }
