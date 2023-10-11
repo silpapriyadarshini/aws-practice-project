@@ -1,6 +1,7 @@
 variable "vpc_id" {
     description = "This is the id of vpc"
 }
+
 variable "subnet_cidr" {
   description = "This is the CIDR of Subnet"
 }

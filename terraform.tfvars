@@ -1,15 +1,20 @@
 # region           = "eu-west-1"
-az1              = "eu-west-1a"
-az2              = "eu-west-1b"
+az1 = "eu-central-1a"
+az2 = "eu-central-1b"
 
-vpc_name         = "vpc1"
-vpc_cidr         = "192.168.0.0/16"
+vpc_name = "vpc1"
+vpc_cidr = "192.168.0.0/16"
 
 pub_subnet_cidr = "192.168.6.0/24"
-pub_subnet_name = "private_sub1"
+pub_subnet_name = "public-subnet"
 
-pri_subnet1_cidr = "192.168.7.0/24"
-pri_subnet1_name = "private_sub1"
+app_subnet_cidr = "192.168.7.0/24"
+app_subnet_name = "app_subnet"
 
-pri_subnet2_cidr = "192.168.8.0/24"
-pri_subnet2_name = "private_sub2"
+db_subnet_cidr = "192.168.8.0/24"
+db_subnet_name = "db_subnet"
+
+ami_id = "ami-04e601abe3e1a910f"
+instance-type = "t2.micro"
+key_name = "migration-key"
+instance_tag = "public"
