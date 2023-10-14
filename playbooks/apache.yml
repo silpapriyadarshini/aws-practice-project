@@ -1,0 +1,17 @@
+---
+- name: Install apache server   # name of the playbook
+  hosts: web                     # target group defined in the inventory file 
+  become: true
+  tasks:
+    - name: update the yum
+      yum:
+        update_cache: yes
+    - name: install apache server
+      yum:
+        name: httpd
+        state: latest
+    - name: start and enable autostart of apache server
+      service:
+        name: httpd
+        state: started
+        enabled: yes

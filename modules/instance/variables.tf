@@ -22,3 +22,12 @@ variable "ec2_subnet" {
 variable "vpc_id" {
     description = "VPC ID used for ec2 instances"
 }
+
+variable "ec2_user_data" {
+    description = "User data used for ec2 instances"
+}
+
+variable "instance_profile" {
+    description = "Instance profile attched to ec2 instances"
+}
+

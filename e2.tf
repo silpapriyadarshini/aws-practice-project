@@ -7,4 +7,11 @@ module "public-ec2"{
     ec2_instance_type   = var.instance-type
     ec2_key             = var.key_name
     ec2_tag             = var.instance_tag
+    instance_profile    = aws_iam_instance_profile.ec2_cw_agent.name
+    ec2_user_data       = local.userdata
+}
+
+resource "aws_eip" "public_ec2_eip" {
+  instance = module.public-ec2.instance-id
+  vpc = true
 }

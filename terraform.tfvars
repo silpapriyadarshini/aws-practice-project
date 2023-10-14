@@ -14,7 +14,7 @@ app_subnet_name = "app_subnet"
 db_subnet_cidr = "192.168.8.0/24"
 db_subnet_name = "db_subnet"
 
-ami_id = "ami-04e601abe3e1a910f"
+ami_id = "ami-0427a796a4e582276"
 instance-type = "t2.micro"
 key_name = "migration-key"
 instance_tag = "public"

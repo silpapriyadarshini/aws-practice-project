@@ -3,12 +3,8 @@ output "vpc_id" {
   value       = aws_vpc.my_vpc.id
 }
 
-# output "pub_subnet_id" {
-#   description = "This is my public subnet ID"
-#   value       = aws_vpc.my_vpc.id
-# }
+output "public_ec2_id" {
+  description = "This is my ec2 instance ID for public subnet"
+  value       = module.public-ec2.instance-id
+}
 
-# output "pub_subnet_id" {
-#   description = "This is my public subnet ID"
-#   value       = aws_vpc.my_vpc.id
-# }
