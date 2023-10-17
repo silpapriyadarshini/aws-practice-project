@@ -31,3 +31,6 @@ variable "instance_profile" {
     description = "Instance profile attched to ec2 instances"
 }
 
+variable "ec2_securitygroup" {
+    description = "Instance profile attched to ec2 instances"
+}

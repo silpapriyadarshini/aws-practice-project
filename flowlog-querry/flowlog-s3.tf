@@ -1,3 +1,8 @@
+################################################################################
+#                       Setup Flowlog for VPC in S3                       #
+################################################################################
+
+
 resource "aws_flow_log" "vpc_flowlog" {
   log_destination      = aws_s3_bucket.vpc_flowlog_bucket.arn
   log_destination_type = "s3"

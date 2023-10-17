@@ -14,7 +14,7 @@ app_subnet_name = "app_subnet"
 db_subnet_cidr = "192.168.8.0/24"
 db_subnet_name = "db_subnet"
 
-ami_id = "ami-0427a796a4e582276"
+ami_id = "ami-0427a796a4e582276"    # amzn2-ami-kernel-5.10-hvm-2.0.20230926.0-x86_64-gp2
 instance-type = "t2.micro"
 key_name = "migration-key"
 instance_tag = "public"

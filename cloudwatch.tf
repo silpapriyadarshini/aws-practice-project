@@ -112,7 +112,6 @@ resource "aws_cloudwatch_dashboard" "public_ec2" {
   EOF
 }
 
-
 resource "aws_cloudwatch_metric_alarm" "foobar" {
   alarm_name                = "terraform-test-foobar5"
   comparison_operator       = "GreaterThanOrEqualToThreshold"

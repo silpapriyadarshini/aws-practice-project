@@ -9,6 +9,7 @@ module "public-ec2"{
     ec2_tag             = var.instance_tag
     instance_profile    = aws_iam_instance_profile.ec2_cw_agent.name
     ec2_user_data       = local.userdata
+    ec2_securitygroup   = aws_security_group.pub_ec2_sg.id
 }
 
 resource "aws_eip" "public_ec2_eip" {
